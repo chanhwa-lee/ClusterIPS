@@ -12,7 +12,7 @@
 
 ############################################
 # This file requires "Data/DHS/result.Rdata".
-# Causal estimands under the IPS policy estimation results are visualized.
+# Causal estimands under the Cluster IPS policy estimation results are visualized.
 # Generated figures are saved under "Data/DHS/".
 ############################################
 

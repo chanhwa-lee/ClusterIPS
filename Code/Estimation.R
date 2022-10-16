@@ -12,7 +12,7 @@
 
 ############################################
 # This file requires "Code/Estimator.R" and "Data/DHS/HHData.Rdata".
-# Senegal DHS data is analyzed to estimate the causal estimands under the IPS policy.
+# Senegal DHS data is analyzed to estimate the causal estimands under the cluster IPS policy.
 # The code will take a lot of time, so it is recommended to use parallel computing.
 # To parallelize, submit jobs in for(s in 1:S){...} separately
 # Estimates and SE estimates are saved at "Data/DHS/result.Rdata".

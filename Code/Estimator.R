@@ -14,7 +14,7 @@
 ###--------------------------- Estimator function ---------------------------###
 
 #' Nonparametric efficient sample splitting estimator under 
-#' the Incremental Propensity Score policy
+#' the Cluster Incremental Propensity Score policy
 #'
 #' @param dat A data.frame. Columns with cluster id 'id', outcome 'Y', 
 #' treatment 'A', leave-one-out within-cluster treatment proportion 'g.A'

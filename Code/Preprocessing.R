@@ -15,7 +15,7 @@
 
 ############################################
 # By running this R file, the DHS dataset is cleaned.
-# Preprocessed dataset is saved as "HHData.Rdata"and used in "Estimation.R".
+# Preprocessed dataset is saved as "Data/DHS/HHData.Rdata"and used in "Code/Estimation.R".
 ############################################
 
 ##########################################
