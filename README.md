@@ -1,5 +1,9 @@
 # ClusterIPS
-Repository for the paper (in prep) "Efficient Nonparametric Estimation of Incremental Propensity Score Effects with Clustered Interference"
+Repository for the paper (in prep) "**Efficient Nonparametric Estimation of Incremental Propensity Score Effects with Clustered Interference**"
+
+- Developed nonparametric estimation of causal network effects under interference based on semiparametric efficiency theory and empirical process
+- Used ensemble of nonparametric and ML models (spline regression, GAM, boosting, Random Forest, neural net) via SuperLearnear in R
+- Assessed the effect of water, sanitation, and hygiene (WASH) facilities on diarrhea incidence among children, allowing for interference within census blocks
 
 ## :file_folder: Data
 
@@ -8,7 +12,7 @@ Repository for the paper (in prep) "Efficient Nonparametric Estimation of Increm
 - Used to assess the effect of WASH facilities on diarrhea incidence among children, allowing for interference within census blocks
 - Download the data from [https://dhsprogram.com/data/available-datasets.cfm](https://dhsprogram.com/data/available-datasets.cfm) 
 (requires data request submission) and place the datasets in "Data/DHS/" by following procedure:
-  - [ ] Senegal: Continuous DHS, 2015 -> (download) SNKR7HDT.ZIP -> (uncompress) SNKR7HFL.DTA -> (rename) senegal15.DTA
+  - Senegal: Continuous DHS, 2015 -> (download) SNKR7HDT.ZIP -> (uncompress) SNKR7HFL.DTA -> (rename) senegal15.DTA
   - Senegal: Continuous DHS, 2016 -> (download) SNKR7IDT.ZIP -> (uncompress) SNKR7IFL.DTA -> (rename) senegal16.DTA
   - Senegal: Continuous DHS, 2017 -> (download) SNKR7ZDT.ZIP -> (uncompress) SNKR7ZFL.DTA -> (rename) senegal17.DTA
   - Senegal: Continuous DHS, 2018 -> (download) SNKR81DT.ZIP -> (uncompress) SNKR81FL.DTA -> (rename) senegal18.DTA
@@ -70,3 +74,12 @@ Simulation for mis-specified nuisance functions scenario
 
 ### :page_facing_up: siumulation.xlsx
 Simulation results for both Scenarios organized
+
+## Result
+
+![plot](Data/DHS/95CIs.jpg)
+
+- Household WASH facilities protect children from diarrhea, and the protective effects increase when neighboring households also have WASH facilities. 
+- Childrenin WASH households can gain additional protective effect as more neighboring households are equipped with WASH facilities, which is not true for children from households without WASH facilities. 
+- Therefore, it is important to install as many WASH facilities as possible
+to prevent diarrhea among children.
